@@ -44,7 +44,11 @@
     }
     &-knowledge-button {
         &:hover {
-            background-color: white !important;
+            background: linear-gradient(
+                0deg,
+                #3358f4 0%,
+                #1d8cf8 100%
+            ) !important;
         }
     }
 }

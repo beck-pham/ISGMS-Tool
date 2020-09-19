@@ -11,7 +11,6 @@ import {
     Button
 } from 'reactstrap';
 
-import './_KnowledgeBase.scss';
 class KnowledgeBase extends React.Component {
     render() {
         return (
@@ -63,7 +62,7 @@ class KnowledgeBase extends React.Component {
                                         Bugs And Troubleshooting
                                     </p>
                                 </CardBody>
-                                <Button className='m-5 knowledge-button'>
+                                <Button className='m-5 search-knowledge-button'>
                                     Click Here
                                 </Button>
                             </Card>
@@ -81,7 +80,7 @@ class KnowledgeBase extends React.Component {
                                         Create A New Unknown Bug
                                     </p>
                                 </CardBody>
-                                <Button className='m-5 knowledge-button'>
+                                <Button className='m-5 search-knowledge-button'>
                                     Click Here
                                 </Button>
                             </Card>
