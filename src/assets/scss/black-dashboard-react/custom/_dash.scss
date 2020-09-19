@@ -1,0 +1,28 @@
+.dash-item {
+    transition: transform 0.2s;
+    &:hover {
+        background-color: #5460a27e;
+        transform: translateY(-1rem) scale(1.03);
+    }
+}
+
+.count-up {
+    font-size: 1.5rem;
+    color: #5e72e4;
+    font-weight: bolder;
+    opacity: 1;
+    margin-bottom: 15px;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1.5s;
+
+    @keyframes fadeInOpacity {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
