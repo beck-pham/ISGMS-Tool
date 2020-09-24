@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;700;900&display=swap" rel="stylesheet');
+
+.intro {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(#03a9f4, 0.8),
+      rgba(#2979ff, 0.8)
+    ),
+    url(../img/datacenter.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  padding: 1rem;
+  margin-bottom: -20rem;
+  &-text-box {
+    position: inherit;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+.heading-primary {
+  color: $color-black-main;
+  text-transform: capitalize;
+  margin: 60px;
+  /* fixed the shaking animation issue */
+  backface-visibility: hidden;
+
+  &-main {
+    font-family: 'Titillium Web', monospace;
+    display: inherit;
+    font-size: 6rem;
+    font-weight: 900;
+
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 4rem;
+    }
+  }
+
+  &-sub {
+    font-family: 'Titillium Web', monospace;
+    display: block;
+    font-size: 4rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    animation: moveInRight 2s ease-in;
+
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 4rem;
+    }
+  }
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  //make gradient appears behind texts
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all 0.2s;
+
+  @include respond(tab-port) {
+    font-size: 2.5rem;
+  }
+
+  @include respond(phone) {
+    font-size: 1.5rem;
+  }
+
+  &:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.3);
+  }
+}
+
+.heading-tertinary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}

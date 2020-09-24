@@ -1,13 +1,13 @@
 export {
-    chartByBU,
-    chartByDC,
-    chartByModel,
-    chartIsilon,
-    chartAvere,
-    chartMapr
+  chartByBU,
+  chartByDC,
+  chartByModel,
+  chartIsilon,
+  chartAvere,
+  chartMapr
 } from './pieCharts';
 
-export { chartNetappFilers, chartExample3, chartExample4 } from './lineCharts';
+export { chartAvereSystems, chartExample3, chartQA } from './lineCharts';
 
 export { chartSystems } from './multiLineCharts';
 

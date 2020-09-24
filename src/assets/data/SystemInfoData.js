@@ -21,7 +21,7 @@ export const SystemInfoDashItems = [
         id: 3,
         title: 'Total Disks Used',
         subtitle: '15% from last month',
-        end: 199158,
+        end: 194020,
         duration: 2.75
     },
     {

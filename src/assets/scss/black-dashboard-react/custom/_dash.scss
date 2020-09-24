@@ -1,33 +1,33 @@
 .dash-item {
-    transition: transform 0.2s;
-    &:hover {
-        background: linear-gradient(0deg, #3358f4 0%, #1d8cf8 100%) !important;
-        transform: translateY(-1rem) scale(1.03);
-        color: white;
+  transition: transform 0.2s;
+  &:hover {
+    background: linear-gradient(0deg, #3358f4 0%, #1d8cf8 100%) !important;
+    transform: translateY(-1rem) scale(1.03);
+    color: white;
 
-        .count-up {
-            color: white;
-        }
+    .count-up {
+      color: white;
     }
+  }
 }
 
 .count-up {
-    font-size: 1.5rem;
-    color: #1c7fe2;
-    font-weight: bolder;
-    opacity: 1;
-    margin-bottom: 15px;
-    animation-name: fadeInOpacity;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 1.5s;
+  font-size: 1.5rem;
+  color: #1c7fe2;
+  font-weight: bolder;
+  opacity: 1;
+  margin-bottom: 15px;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1.5s;
 
-    @keyframes fadeInOpacity {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
+  @keyframes fadeInOpacity {
+    0% {
+      opacity: 0;
     }
+    100% {
+      opacity: 1;
+    }
+  }
 }
