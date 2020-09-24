@@ -18,13 +18,14 @@ import {
 
 import ToolKit from 'components/ToolKit/Toolkit';
 
-const Dashboard = () => (
+const HomePage = () => (
   <>
     <div className="content">
       <Row>
         <Col md="12">
           <Card inverse>
             <CardImg
+              className="dashboard-img"
               src={require('assets/img/datacenter.jpg')}
               alt="data center image"
             />
@@ -178,4 +179,4 @@ const Dashboard = () => (
   </>
 );
 
-export default Dashboard;
+export default HomePage;

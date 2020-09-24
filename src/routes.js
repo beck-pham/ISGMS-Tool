@@ -1,16 +1,16 @@
-// import Dashboard from 'views/Dashboard.js';
 import SystemInfo from 'views/SystemInfo.js';
 import Team from 'views/Team.js';
 import StorageEquipments from 'views/StorageEquipments.js';
 import Ticket from 'views/Ticket.js';
 import KnowledgeBase from 'views/KnowledgeBase.js';
-import Dashboard from 'views/Dashboard.js';
+import HomePage from 'views/HomePage.js';
+import TimeSeries from 'views/TimeSeries.js';
 var routes = [
   {
-    path: '/dashboard',
-    name: 'Dashboard',
+    path: '/home',
+    name: 'Home',
     icon: 'tim-icons icon-tablet-2',
-    component: Dashboard,
+    component: HomePage,
     layout: '/admin'
   },
   {
@@ -47,6 +47,25 @@ var routes = [
     icon: 'tim-icons icon-app',
     component: KnowledgeBase,
     layout: '/admin'
+  },
+  {
+    path: '/time-series',
+    name: 'Time Series',
+    icon: 'tim-icons icon-atom',
+    component: TimeSeries,
+    layout: '/admin'
+  },
+  {
+    path: '/https://st11p00im-storagedbm.storage.me.com/installation/index.php',
+    name: 'Automation',
+    icon: 'tim-icons icon-coins'
   }
+  // {
+  //   path: '/cloudvault',
+  //   name: 'CloudVault',
+  //   icon: 'tim-icons icon-app',
+  //   component: CloudVault,
+  //   layout: '/admin'
+  // }
 ];
 export default routes;

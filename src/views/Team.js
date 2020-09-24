@@ -44,13 +44,13 @@ const teamMembers = [
     position: 'Storage SRE'
   },
   {
-    id: 6,
+    id: 7,
     image: require('assets/img/Shaun.jpg'),
     name: 'Shaun Pacada',
     position: 'Storage SRE'
   },
   {
-    id: 7,
+    id: 8,
     image: require('assets/img/Siva.jpg'),
     name: 'Siva Yerruboyina',
     position: 'Storage SRE'

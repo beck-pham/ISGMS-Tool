@@ -65,6 +65,7 @@
 @import 'black-dashboard-react/custom/dash.scss';
 @import 'black-dashboard-react/custom/KnowledgeBase.scss';
 @import 'black-dashboard-react/custom/toolkit.scss';
+@import 'black-dashboard-react/custom/homepage.scss';
 // Vendor / Plugins
 
 @import 'black-dashboard-react/custom/vendor/plugin-perfect-scrollbar.scss';
@@ -82,7 +83,7 @@
 @import 'black-dashboard-react/custom/cards/card-user';
 @import 'black-dashboard-react/custom/cards/card-task';
 @import 'black-dashboard-react/custom/cards/card-plain';
-@import 'black-dashboard-react/custom/cards/card-feature';
+@import 'black-dashboard-react/custom/cards/card-timeseries';
 
 // React differences
 @import 'black-dashboard-react/react-differences/react-differences';
