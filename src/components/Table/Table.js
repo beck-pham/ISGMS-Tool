@@ -18,7 +18,7 @@ const SystemInfoTable = ({ data, columns }) => {
         <Col md="12">
           <Card>
             <CardHeader className="text-center">
-              <CardTitle tag="h2">System Info Table</CardTitle>
+              <CardTitle tag="h2">Info Table</CardTitle>
             </CardHeader>
             <CardBody>
               <Table className="tablesorter" responsive>

@@ -5,6 +5,8 @@ import Ticket from 'views/Ticket.js';
 import KnowledgeBase from 'views/KnowledgeBase.js';
 import HomePage from 'views/HomePage.js';
 import TimeSeries from 'views/TimeSeries.js';
+import WarrantyTracker from 'views/WarrantyTracker/WarrantyTracker.js';
+import WarrantyTrackerIsilon from 'views/WarrantyTracker/WarrantyTrackerIsilon.js';
 var routes = [
   {
     path: '/home',
@@ -21,10 +23,10 @@ var routes = [
     layout: '/admin'
   },
   {
-    path: '/system-info',
-    name: 'System Info',
-    icon: 'tim-icons icon-alert-circle-exc',
-    component: SystemInfo,
+    path: '/iticket',
+    name: 'i-Ticket',
+    icon: 'tim-icons icon-settings',
+    component: Ticket,
     layout: '/admin'
   },
   {
@@ -35,10 +37,24 @@ var routes = [
     layout: '/admin'
   },
   {
-    path: '/iticket',
-    name: 'i-Ticket',
-    icon: 'tim-icons icon-settings',
-    component: Ticket,
+    path: '/system-info',
+    name: 'System Info',
+    icon: 'tim-icons icon-alert-circle-exc',
+    component: SystemInfo,
+    layout: '/admin'
+  },
+  {
+    path: '/warranty-tracker',
+    name: 'Warranty Tracker',
+    icon: 'tim-icons icon-html5',
+    component: WarrantyTracker,
+    layout: '/admin'
+  },
+  {
+    path: '/isilon',
+    name: 'Isilon',
+    icon: 'tim-icons icon-html5',
+    component: WarrantyTrackerIsilon,
     layout: '/admin'
   },
   {

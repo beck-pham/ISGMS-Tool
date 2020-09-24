@@ -56,11 +56,16 @@ class KnowledgeBase extends React.Component {
                 <i className="fas fa-file-alt fa-5x py-3"></i>
                 <CardBody>
                   <p>
-                    Browses Through Our Documentation For Bugs And
+                    Browses Through Our Documentation For Break-fix And
                     Troubleshooting
                   </p>
                 </CardBody>
-                <Button className="m-5 search-knowledge-button">
+                <Button
+                  className="m-5 search-knowledge-button"
+                  onClick={() =>
+                    window.open('https://connectme.apple.com/docs/DOC-1699692')
+                  }
+                >
                   Click Here
                 </Button>
               </Card>
@@ -77,7 +82,14 @@ class KnowledgeBase extends React.Component {
                     Search For A Known Bug Or Issue Or Create A New Unknown Bug
                   </p>
                 </CardBody>
-                <Button className="m-5 search-knowledge-button">
+                <Button
+                  className="m-5 search-knowledge-button"
+                  onClick={() =>
+                    window.open(
+                      'https://mr11p00im-storagedbm.storage.me.com/knowledge_base/'
+                    )
+                  }
+                >
                   Click Here
                 </Button>
               </Card>
@@ -93,7 +105,12 @@ class KnowledgeBase extends React.Component {
                     Connect With Us If You Have Any Questions For Bugs Related
                   </p>
                 </CardBody>
-                <Button className="m-5 search-knowledge-button">
+                <Button
+                  className="m-5 search-knowledge-button"
+                  onClick={() =>
+                    (window.location.href = `mailto:isgms@apple.com`)
+                  }
+                >
                   Click Here
                 </Button>
               </Card>
