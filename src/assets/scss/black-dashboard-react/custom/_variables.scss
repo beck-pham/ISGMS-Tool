@@ -27,18 +27,18 @@ $dark-background: #555555 !default;
 
 $grays: () !default;
 $grays: map-merge(
-    (
-        '100': $gray-100,
-        '200': $gray-200,
-        '300': $gray-300,
-        '400': $gray-400,
-        '500': $gray-500,
-        '600': $gray-600,
-        '700': $gray-700,
-        '800': $gray-800,
-        '900': $gray-900
-    ),
-    $grays
+  (
+    '100': $gray-100,
+    '200': $gray-200,
+    '300': $gray-300,
+    '400': $gray-400,
+    '500': $gray-500,
+    '600': $gray-600,
+    '700': $gray-700,
+    '800': $gray-800,
+    '900': $gray-900
+  ),
+  $grays
 );
 
 $blue: #5e72e4 !default;
@@ -71,31 +71,32 @@ $opacity-2: rgba(255, 255, 255, 0.2) !default;
 
 $colors: () !default;
 $colors: map-merge(
-    (
-        'blue': $blue,
-        'indigo': $indigo,
-        'purple': $purple,
-        'pink': $pink,
-        'red': $red,
-        'orange': $orange,
-        'yellow': $yellow,
-        'green': $green,
-        'teal': $teal,
-        'cyan': $cyan,
-        'white': $white,
-        'gray': $gray-600,
-        'light': $gray-400,
-        'lighter': $gray-200,
-        'gray-dark': $gray-800
-    ),
-    $colors
+  (
+    'blue': $blue,
+    'indigo': $indigo,
+    'purple': $purple,
+    'pink': $pink,
+    'red': $red,
+    'orange': $orange,
+    'yellow': $yellow,
+    'green': $green,
+    'teal': $teal,
+    'cyan': $cyan,
+    'white': $white,
+    'gray': $gray-600,
+    'light': $gray-400,
+    'lighter': $gray-200,
+    'gray-dark': $gray-800
+  ),
+  $colors
 );
 
 $default-color-opacity: rgba(182, 182, 182, 0.6) !default;
 $orange-color: #f96332 !default;
 
 $default: #344675 !default;
-$primary: #e14eca !default;
+//$primary: #e14eca !default;
+$primary: #3358f4 !default;
 $secondary: #f4f5f7 !default;
 $success: #00f2c3 !default;
 $info: #1d8cf8 !default;
@@ -164,39 +165,39 @@ $behance-states: lighten($behance, 6%) !default;
 
 $theme-colors: () !default;
 $theme-colors: map-merge(
-    (
-        'default': $default,
-        'primary': $primary,
-        'secondary': $secondary,
-        'success': $success,
-        'info': $info,
-        'warning': $warning,
-        'danger': $danger,
-        'white': $white,
-        'neutral': $white,
-        'dark': $dark,
-        'darker': $darker
-    ),
-    $theme-colors
+  (
+    'default': $default,
+    'primary': $primary,
+    'secondary': $secondary,
+    'success': $success,
+    'info': $info,
+    'warning': $warning,
+    'danger': $danger,
+    'white': $white,
+    'neutral': $white,
+    'dark': $dark,
+    'darker': $darker
+  ),
+  $theme-colors
 );
 
 $brand-colors: () !default;
 $brand-colors: map-merge(
-    (
-        'facebook': $facebook,
-        'twitter': $twitter,
-        'google-plus': $google-plus,
-        'instagram': $instagram,
-        'pinterest': $pinterest,
-        'youtube': $youtube,
-        'dribbble': $dribbble,
-        'github': $github,
-        'reddit': $reddit,
-        'behance': $behance,
-        'tumblr': $tumblr,
-        'linkedin': $linkedin
-    ),
-    $brand-colors
+  (
+    'facebook': $facebook,
+    'twitter': $twitter,
+    'google-plus': $google-plus,
+    'instagram': $instagram,
+    'pinterest': $pinterest,
+    'youtube': $youtube,
+    'dribbble': $dribbble,
+    'github': $github,
+    'reddit': $reddit,
+    'behance': $behance,
+    'tumblr': $tumblr,
+    'linkedin': $linkedin
+  ),
+  $brand-colors
 );
 
 /*     brand Colors              */
@@ -240,14 +241,14 @@ $body-color: $gray-700 !default;
 
 $section-colors: () !default;
 $section-colors: map-merge(
-    (
-        'primary': $body-bg,
-        'secondary': $secondary,
-        'light': $gray-400,
-        'dark': $dark,
-        'darker': $darker
-    ),
-    $section-colors
+  (
+    'primary': $body-bg,
+    'secondary': $secondary,
+    'light': $gray-400,
+    'dark': $dark,
+    'darker': $darker
+  ),
+  $section-colors
 );
 
 // Links
@@ -260,11 +261,11 @@ $link-hover-decoration: none !default;
 // Grid breakpoints
 
 $grid-breakpoints: (
-    xs: 0,
-    sm: 576px,
-    md: 768px,
-    lg: 992px,
-    xl: 1200px
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
 );
 
 @include _assert-ascending($grid-breakpoints, '$grid-breakpoints');
@@ -279,35 +280,35 @@ $grid-breakpoints: (
 $spacer: 1rem !default;
 $spacers: () !default;
 $spacers: map-merge(
-    (
-        0: 0,
-        1: (
-            $spacer * 0.25
-        ),
-        2: (
-            $spacer * 0.5
-        ),
-        3: $spacer,
-        4: (
-            $spacer * 1.5
-        ),
-        5: (
-            $spacer * 3
-        ),
-        'sm': (
-            $spacer * 2
-        ),
-        'md': (
-            $spacer * 4
-        ),
-        'lg': (
-            $spacer * 6
-        ),
-        'xl': (
-            $spacer * 8
-        )
+  (
+    0: 0,
+    1: (
+      $spacer * 0.25
     ),
-    $spacers
+    2: (
+      $spacer * 0.5
+    ),
+    3: $spacer,
+    4: (
+      $spacer * 1.5
+    ),
+    5: (
+      $spacer * 3
+    ),
+    'sm': (
+      $spacer * 2
+    ),
+    'md': (
+      $spacer * 4
+    ),
+    'lg': (
+      $spacer * 6
+    ),
+    'xl': (
+      $spacer * 8
+    )
+  ),
+  $spacers
 );
 
 $padding-base-vertical: 0.5rem !default;
@@ -330,13 +331,13 @@ $margin-base-vertical: 15px !default;
 
 $sizes: () !default;
 $sizes: map-merge(
-    (
-        25: 25%,
-        50: 50%,
-        75: 75%,
-        100: 100%
-    ),
-    $sizes
+  (
+    25: 25%,
+    50: 50%,
+    75: 75%,
+    100: 100%
+  ),
+  $sizes
 );
 
 // Components
@@ -369,7 +370,7 @@ $dropdown-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.125);
 $box-shadow-raised: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
 $box-shadow: 0 1px 20px 0px rgba(0, 0, 0, 0.1);
 $sidebar-box-shadow: 0px 2px 22px 0 rgba(0, 0, 0, 0.2),
-    0px 2px 30px 0 rgba(0, 0, 0, 0.35);
+  0px 2px 30px 0 rgba(0, 0, 0, 0.35);
 
 $component-active-color: $white !default;
 $component-active-bg: theme-color('primary') !default;
@@ -566,7 +567,7 @@ $btn-text-transform: uppercase !default;
 $btn-letter-spacing: 0.025em !default;
 $btn-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 $btn-hover-box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1),
-    0 3px 6px rgba(0, 0, 0, 0.08);
+  0 3px 6px rgba(0, 0, 0, 0.08);
 $btn-focus-box-shadow: $btn-hover-box-shadow !default;
 $btn-focus-width: $input-btn-focus-width !default;
 
@@ -598,9 +599,9 @@ $input-disabled-bg: $gray-200 !default;
 $input-muted-bg: #edf0f5 !default;
 
 $input-alternative-box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15),
-    0 1px 0 rgba(0, 0, 0, 0.02);
+  0 1px 0 rgba(0, 0, 0, 0.02);
 $input-focus-alternative-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
-    0 1px 3px rgba(0, 0, 0, 0.08);
+  0 1px 3px rgba(0, 0, 0, 0.08);
 
 $input-color: $opacity-8 !default;
 $input-border-color: #cad1d7 !default;
@@ -618,7 +619,7 @@ $input-focus-placeholder-color: $gray-500 !default;
 
 $input-height-border: $input-border-width * 2 !default;
 $input-height-inner: ($font-size-base * $input-btn-line-height) +
-    ($input-btn-padding-y * 2) !default;
+  ($input-btn-padding-y * 2) !default;
 $input-height: calc(#{$input-height-inner} + #{$input-height-border}) !default;
 
 $input-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -660,8 +661,8 @@ $custom-control-indicator-checked-bg: $component-active-bg !default;
 $custom-control-indicator-checked-border-color: $component-active-border-color !default;
 $custom-control-indicator-checked-box-shadow: $custom-control-indicator-box-shadow !default;
 $custom-control-indicator-checked-disabled-bg: rgba(
-    theme-color('primary'),
-    0.5
+  theme-color('primary'),
+  0.5
 );
 
 $custom-control-indicator-disabled-bg: $gray-200 !default;
@@ -712,7 +713,7 @@ $dropdown-border-width: 0 !default;
 $dropdown-border-color: rgba($black, 0.15);
 $dropdown-border-radius: $border-radius-xs !default;
 $dropdown-box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1),
-    0 15px 35px rgba(50, 50, 93, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
+  0 15px 35px rgba(50, 50, 93, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
 
 $dropdown-link-active-color: $component-active-color !default;
 $dropdown-link-active-bg: $component-active-bg !default;
@@ -943,7 +944,7 @@ $modal-content-border-width: 1px !default;
 $modal-content-border-radius: $border-radius-sm !default;
 $modal-content-box-shadow-xs: 0px 10px 50px 0px rgba(0, 0, 0, 0.5);
 $modal-content-box-shadow-sm-up: 0 15px 35px rgba(50, 50, 93, 0.2),
-    0 5px 15px rgba(0, 0, 0, 0.17);
+  0 5px 15px rgba(0, 0, 0, 0.17);
 
 $modal-backdrop-bg: $black !default;
 $modal-backdrop-opacity: 0.16 !default;
@@ -983,8 +984,8 @@ $datepicker-active-box-shadow: none !default;
 
 $datepicker-range-background: theme-color('primary') !default;
 $datepicker-range-cell-focused-background: darken(
-    $datepicker-range-background,
-    5%
+  $datepicker-range-background,
+  5%
 );
 $datepicker-range-color: $white !default;
 $datepicker-range-highlighted-bg: $gray-200 !default;

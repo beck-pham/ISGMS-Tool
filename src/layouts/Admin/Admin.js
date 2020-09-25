@@ -74,6 +74,9 @@ class Admin extends React.Component {
             key={key}
           />
         );
+      }
+      if (prop.layout === '/automation') {
+        return <Route path={prop.path} key={key} />;
       } else {
         return null;
       }
