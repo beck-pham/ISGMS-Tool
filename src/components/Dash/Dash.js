@@ -11,7 +11,7 @@ const Dashboard = ({ items, title }) => (
     <h2 className="dashboard-heading text-center container">{title}</h2>
     <Row>
       {items.map(({ id, ...otherProps }) => (
-        <Col xs={12} sm={6} md={4}>
+        <Col key={id} xs={12} sm={6} md={4}>
           <DashboardItem key={id} {...otherProps} />
         </Col>
       ))}

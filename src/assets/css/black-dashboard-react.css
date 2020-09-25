@@ -11736,6 +11736,8 @@ textarea.form-control {
     color: white; }
     .dash-item:hover .count-up {
       color: white; }
+  .dash-item-title {
+    display: contents; }
 
 .count-up {
   font-size: 1.5rem;
@@ -12629,6 +12631,9 @@ textarea.form-control {
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 600; }
+
+.card-img {
+  opacity: 0.4; }
 
 select.form-control option {
   color: #888; }

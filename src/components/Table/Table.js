@@ -24,15 +24,20 @@ const SystemInfoTable = ({ data, columns }) => {
               <Table className="tablesorter" responsive>
                 <thead className="text-primary">
                   <tr>
-                    {columns && columns.map(column => <th>{column.Header}</th>)}
+                    {columns &&
+                      columns.map((column, id) => (
+                        <th key={id}>{column.Header}</th>
+                      ))}
                   </tr>
                 </thead>
                 <tbody>
                   {data &&
-                    data.map(item => (
-                      <tr>
+                    data.map((item, id) => (
+                      <tr key={id}>
                         {item &&
-                          Object.values(item).map(value => <td>{value}</td>)}
+                          Object.values(item).map((value, id) => (
+                            <td key={id}>{value}</td>
+                          ))}
                       </tr>
                     ))}
                 </tbody>

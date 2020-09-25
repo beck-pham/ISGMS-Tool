@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ReactComponent as ITicketIcon } from 'assets/icon/iticket.svg';
 import { ReactComponent as CloudVaultIcon } from 'assets/icon/cloudvault.svg';
 import { ReactComponent as AutomationIcon } from 'assets/icon/automation.svg';
@@ -8,6 +9,7 @@ import { ReactComponent as EquipmentIcon } from 'assets/icon/equipment.svg';
 import { ReactComponent as SystemInfoIcon } from 'assets/icon/systeminfo.svg';
 import { ReactComponent as InventoryIcon } from 'assets/icon/inventory.svg';
 import { ReactComponent as TroubleshootingIcon } from 'assets/icon/troubleshooting.svg';
+import { ReactComponent as WarrantyIcon } from 'assets/icon/warranty.svg';
 
 const ToolKit = () => (
   <section className="section-toolkit">
@@ -34,7 +36,9 @@ const ToolKit = () => (
       <article className="article-card">
         <header className="toolkit-card-header">
           <p>Application</p>
-          <h2>iTicket</h2>
+          <Link to="/admin/iticket">
+            <h2>iTicket</h2>
+          </Link>
           {/* <ul className="card-list-item">
             <li>Dashboard</li>
             <li>Breakfix</li>
@@ -63,121 +67,10 @@ const ToolKit = () => (
 
       <article className="article-card">
         <header className="toolkit-card-header">
-          <p>Application</p>
-          <h2>CloudVault</h2>
-          {/* <ul className="card-list-item">
-            <li>Bucket Info</li>
-            <li>Failed Upload Reports</li>
-            <li>Index Database Metrics</li>
-            <li>Containers Locator</li>
-            <li>Application logs</li>
-          </ul> */}
-        </header>
-
-        <div className="card-author">
-          <a className="author-avatar" href="#section-toolkit">
-            <CloudVaultIcon height="50" width="50" />
-          </a>
-
-          <div className="author-name">
-            <div className="author-name-prefix">Application</div>
-          </div>
-        </div>
-        <div className="tags">
-          <a href="#section-toolkit">python</a>
-          <a href="#section-toolkit">mysql</a>
-        </div>
-      </article>
-
-      <article className="article-card">
-        <header className="toolkit-card-header">
-          <p>Automation</p>
-          <h2>Automation</h2>
-          {/* <ul className="card-list-item">
-            <li>Scripts</li>
-            <li>Automate things</li>
-            <li>Cron-jobs</li>
-          </ul> */}
-        </header>
-
-        <div className="card-author">
-          <a className="author-avatar" href="#section-toolkit">
-            <AutomationIcon height="50" width="50" />
-          </a>
-
-          <div className="author-name">
-            <div className="author-name-prefix">Automation</div>
-          </div>
-        </div>
-        <div className="tags">
-          <a href="#section-toolkit">html</a>
-          <a href="#section-toolkit">css</a>
-          <a href="#section-toolkit">javascript</a>
-          <a href="#section-toolkit">react</a>
-        </div>
-      </article>
-
-      <article className="article-card">
-        <header className="toolkit-card-header">
-          <p>Application</p>
-          <h2>Time Series</h2>
-          {/* <ul className="card-list-item">
-            <li>Real time monitoring</li>
-            <li>Comprehensive metrics analytics</li>
-            <li>Powerful Dashboard</li>
-            <li>Storage/System/Switch Info</li>
-            <li>Visualization</li>
-          </ul> */}
-        </header>
-
-        <div className="card-author">
-          <a className="author-avatar" href="#section-toolkit">
-            <TimeSeriesIcon height="50" width="50" />
-          </a>
-
-          <div className="author-name">
-            <div className="author-name-prefix">Application</div>
-          </div>
-        </div>
-        <div className="tags">
-          <a href="#section-toolkit">javascript</a>
-          <a href="#section-toolkit">mysql</a>
-        </div>
-      </article>
-
-      <article className="article-card">
-        <header className="toolkit-card-header">
-          <p>How To</p>
-          <h2>Knowledge Base</h2>
-          <ul className="card-list-item">
-            {/* <li>Bugzilla</li>
-            <li>File a bug</li>
-            <li>Query Panic Strings</li>
-            <li>System logs</li> */}
-          </ul>
-        </header>
-
-        <div className="card-author">
-          <a className="author-avatar" href="#section-toolkit">
-            <KnowledgeBaseIcon height="50" width="50" />
-          </a>
-
-          <div className="author-name">
-            <div className="author-name-prefix">How To</div>
-          </div>
-        </div>
-        <div className="tags">
-          <a href="#section-toolkit">html</a>
-          <a href="#section-toolkit">css</a>
-          <a href="#section-toolkit">javascript</a>
-          <a href="#section-toolkit">react</a>
-        </div>
-      </article>
-
-      <article className="article-card">
-        <header className="toolkit-card-header">
           <p>Assets</p>
-          <h2>Storage Equipment</h2>
+          <Link to="/admin/storage-equipments">
+            <h2>Storage Equipments</h2>
+          </Link>
           <ul className="card-list-item">
             {/* <li>Warranty Info</li>
             <li>Licensing</li>
@@ -206,7 +99,9 @@ const ToolKit = () => (
       <article className="article-card">
         <header className="toolkit-card-header">
           <p>Data Analysis</p>
-          <h2>System Info</h2>
+          <Link to="/admin/system-info">
+            <h2>System Info</h2>
+          </Link>
           <ul className="card-list-item">
             {/* <li>Usage</li>
             <li>Availability</li>
@@ -221,7 +116,7 @@ const ToolKit = () => (
           </a>
 
           <div className="author-name">
-            <div className="author-name-prefix">Analytic</div>
+            <div className="author-name-prefix">Information</div>
           </div>
         </div>
         <div className="tags">
@@ -233,8 +128,141 @@ const ToolKit = () => (
 
       <article className="article-card">
         <header className="toolkit-card-header">
+          <p>Data Analysis</p>
+          <Link to="/admin/warranty-tracker">
+            <h2>Warranty Tracker</h2>
+          </Link>
+        </header>
+
+        <div className="card-author">
+          <a className="author-avatar" href="#section-toolkit">
+            <WarrantyIcon height="50" width="50" />
+          </a>
+
+          <div className="author-name">
+            <div className="author-name-prefix">Information</div>
+          </div>
+        </div>
+        <div className="tags">
+          <a href="#section-toolkit">javascript</a>
+          <a href="#section-toolkit">css</a>
+          <a href="#section-toolkit">react</a>
+        </div>
+      </article>
+
+      <article className="article-card">
+        <header className="toolkit-card-header">
+          <p>How To</p>
+          <Link to="/admin/knowledge-base">
+            <h2>Knowledge Base</h2>
+          </Link>
+        </header>
+
+        <div className="card-author">
+          <a className="author-avatar" href="#section-toolkit">
+            <KnowledgeBaseIcon height="50" width="50" />
+          </a>
+
+          <div className="author-name">
+            <div className="author-name-prefix">How To</div>
+          </div>
+        </div>
+        <div className="tags">
+          <a href="#section-toolkit">html</a>
+          <a href="#section-toolkit">css</a>
+          <a href="#section-toolkit">javascript</a>
+          <a href="#section-toolkit">react</a>
+        </div>
+      </article>
+
+      <article className="article-card">
+        <header className="toolkit-card-header">
+          <p>Application</p>
+          <Link to="/admin/time-series">
+            <h2>Time Series</h2>
+          </Link>
+        </header>
+
+        <div className="card-author">
+          <a className="author-avatar" href="#section-toolkit">
+            <TimeSeriesIcon height="50" width="50" />
+          </a>
+
+          <div className="author-name">
+            <div className="author-name-prefix">Application</div>
+          </div>
+        </div>
+        <div className="tags">
+          <a href="#section-toolkit">javascript</a>
+          <a href="#section-toolkit">mysql</a>
+        </div>
+      </article>
+      <article className="article-card">
+        <header className="toolkit-card-header">
+          <p>Application</p>
+          <Link to="/admin/cloudvault">
+            <h2>CloudVault</h2>
+          </Link>
+          {/* <ul className="card-list-item">
+            <li>Bucket Info</li>
+            <li>Failed Upload Reports</li>
+            <li>Index Database Metrics</li>
+            <li>Containers Locator</li>
+            <li>Application logs</li>
+          </ul> */}
+        </header>
+
+        <div className="card-author">
+          <a className="author-avatar" href="#section-toolkit">
+            <CloudVaultIcon height="50" width="50" />
+          </a>
+
+          <div className="author-name">
+            <div className="author-name-prefix">Application</div>
+          </div>
+        </div>
+        <div className="tags">
+          <a href="#section-toolkit">python</a>
+          <a href="#section-toolkit">mysql</a>
+        </div>
+      </article>
+
+      <article className="article-card">
+        <header className="toolkit-card-header">
+          <p>Automation</p>
+          <Link to="/admin/automation">
+            <h2>Automation</h2>
+          </Link>
+          {/* <ul className="card-list-item">
+            <li>Scripts</li>
+            <li>Automate things</li>
+            <li>Cron-jobs</li>
+          </ul> */}
+        </header>
+
+        <div className="card-author">
+          <a className="author-avatar" href="#section-toolkit">
+            <AutomationIcon height="50" width="50" />
+          </a>
+
+          <div className="author-name">
+            <div className="author-name-prefix">Automation</div>
+          </div>
+        </div>
+        <div className="tags">
+          <a href="#section-toolkit">html</a>
+          <a href="#section-toolkit">css</a>
+          <a href="#section-toolkit">javascript</a>
+          <a href="#section-toolkit">react</a>
+        </div>
+      </article>
+
+      <article className="article-card">
+        <header className="toolkit-card-header">
           <p>Assets</p>
-          <h2>Inventory</h2>
+          <Link to="/admin/inventory">
+            <h2>Inventory</h2>
+          </Link>
           <ul className="card-list-item">
             {/* <li>FRU info</li>
             <li>Threshold</li>
@@ -262,7 +290,9 @@ const ToolKit = () => (
       <article className="article-card">
         <header className="toolkit-card-header">
           <p>How To</p>
-          <h2>Troubleshooting</h2>
+          <Link to="/admin/troubleshooting">
+            <h2>Troubleshooting</h2>
+          </Link>
           <ul className="card-list-item">
             {/* <li>Self-Healing</li>
             <li>Volume Auto Growth</li>

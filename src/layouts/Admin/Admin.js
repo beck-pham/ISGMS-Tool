@@ -120,6 +120,7 @@ class Admin extends React.Component {
               toggleSidebar={this.toggleSidebar}
               sidebarOpened={this.state.sidebarOpened}
             />
+
             <Switch>
               {this.getRoutes(routes)}
               <Redirect from="*" to="/admin/home" />
