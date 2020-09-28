@@ -5,8 +5,9 @@ import Ticket from 'views/Ticket.js';
 import KnowledgeBase from 'views/KnowledgeBase.js';
 import HomePage from 'views/HomePage.js';
 import TimeSeries from 'views/TimeSeries.js';
+import Inventory from 'views/Inventory.js';
 import WarrantyTracker from 'views/WarrantyTracker/WarrantyTracker.js';
-import WarrantyTrackerIsilon from 'views/WarrantyTracker/WarrantyTrackerIsilon.js';
+//import WarrantyTrackerIsilon from 'views/WarrantyTracker/WarrantyTrackerIsilon.js';
 var routes = [
   {
     path: '/home',
@@ -50,13 +51,13 @@ var routes = [
     component: WarrantyTracker,
     layout: '/admin'
   },
-  {
-    path: '/isilon',
-    name: 'Isilon',
-    icon: 'tim-icons icon-html5',
-    component: WarrantyTrackerIsilon,
-    layout: '/admin'
-  },
+  // {
+  //   path: '/isilon',
+  //   name: 'Isilon',
+  //   icon: 'tim-icons icon-html5',
+  //   component: WarrantyTrackerIsilon,
+  //   layout: '/admin'
+  // },
   {
     path: '/knowledge-base',
     name: 'Knowledge Base',
@@ -72,16 +73,32 @@ var routes = [
     layout: '/admin'
   },
   {
-    path: '/https://st11p00im-storagedbm.storage.me.com/installation/index.php',
-    name: 'Automation',
-    icon: 'tim-icons icon-coins'
-  }
-  // {
-  //   path: '/cloudvault',
-  //   name: 'CloudVault',
-  //   icon: 'tim-icons icon-app',
-  //   component: CloudVault,
-  //   layout: '/admin'
-  // }
+    path: '/inventory',
+    name: 'Inventory',
+    icon: 'tim-icons icon-coins',
+    component: Inventory,
+    layout: '/admin'
+  },
+  {
+    collapse: true,
+    name: 'Pages',
+    icon: 'tim-icons icon-app',
+    state: 'pageCollapse',
+    views: [
+      {
+        path: '/test-page',
+        name: 'Test Page',
+        layout: '/admin',
+        state: 'pageCollapse2'
+      }
+    ]
+  },
+  {
+    path: '/http:google.com',
+    name: 'test',
+    icon: 'tim-icons icon-coins',
+    // component: Inventory,
+    layout: '/test'
+  },
 ];
 export default routes;
