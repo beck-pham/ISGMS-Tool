@@ -78,13 +78,27 @@ var routes = [
     icon: 'tim-icons icon-coins',
     component: Inventory,
     layout: '/admin'
-  }
-  // {
-  //   path: '/cloudvault',
-  //   name: 'CloudVault',
-  //   icon: 'tim-icons icon-app',
-  //   component: CloudVault,
-  //   layout: '/admin'
-  // }
+  },
+  {
+    collapse: true,
+    name: 'Pages',
+    icon: 'tim-icons icon-app',
+    state: 'pageCollapse',
+    views: [
+      {
+        path: '/test-page',
+        name: 'Test Page',
+        layout: '/admin',
+        state: 'pageCollapse2'
+      }
+    ]
+  },
+  {
+    path: '/http:google.com',
+    name: 'test',
+    icon: 'tim-icons icon-coins',
+    // component: Inventory,
+    layout: '/test'
+  },
 ];
 export default routes;
