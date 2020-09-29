@@ -143,7 +143,7 @@ class Sidebar extends React.Component {
           <a
             href={logo.outterLink}
             className="simple-text logo-mini"
-            target="_blank"
+            // target="_blank"
             onClick={this.props.closeSidebar}
           >
             <div className="logo-img">
@@ -155,7 +155,7 @@ class Sidebar extends React.Component {
           <a
             href={logo.outterLink}
             className="simple-text logo-normal"
-            target="_blank"
+            // target="_blank"
             onClick={this.props.closeSidebar}
           >
             {logo.text}
