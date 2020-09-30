@@ -2,7 +2,8 @@ import React from 'react';
 // nodejs library that concatenates classes
 import classNames from 'classnames';
 
-// import { signInWithGoogle } from '../../firebase/firebase.utils';
+import CustomButton from '../CustomButton/CustomButton.js';
+import { signInWithGoogle } from '../../firebase/firebase.utils';
 // reactstrap components
 import {
   Button,
@@ -164,7 +165,6 @@ class AdminNavbar extends React.Component {
                     </NavLink>
                   </DropdownMenu>
                 </UncontrolledDropdown>
-                {/* <Button onClick={signInWithGoogle}>Sign in</Button> */}
                 <UncontrolledDropdown nav>
                   <DropdownToggle
                     caret
