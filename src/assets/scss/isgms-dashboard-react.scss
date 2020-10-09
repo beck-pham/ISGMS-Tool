@@ -1,0 +1,89 @@
+// Core
+
+@import 'isgms-dashboard-react/custom/functions';
+@import 'isgms-dashboard-react/bootstrap/functions';
+
+@import 'isgms-dashboard-react/custom/variables';
+@import 'isgms-dashboard-react/bootstrap/variables';
+
+@import 'isgms-dashboard-react/custom/mixins';
+@import 'isgms-dashboard-react/bootstrap/mixins';
+
+// Bootstrap components
+
+@import 'isgms-dashboard-react/bootstrap/root';
+@import 'isgms-dashboard-react/bootstrap/reboot';
+@import 'isgms-dashboard-react/bootstrap/type';
+@import 'isgms-dashboard-react/bootstrap/images';
+@import 'isgms-dashboard-react/bootstrap/code';
+@import 'isgms-dashboard-react/bootstrap/grid';
+@import 'isgms-dashboard-react/bootstrap/tables';
+@import 'isgms-dashboard-react/bootstrap/forms';
+@import 'isgms-dashboard-react/bootstrap/buttons';
+@import 'isgms-dashboard-react/bootstrap/transitions';
+@import 'isgms-dashboard-react/bootstrap/dropdown';
+@import 'isgms-dashboard-react/bootstrap/button-group';
+@import 'isgms-dashboard-react/bootstrap/input-group';
+@import 'isgms-dashboard-react/bootstrap/custom-forms';
+@import 'isgms-dashboard-react/bootstrap/nav';
+@import 'isgms-dashboard-react/bootstrap/navbar';
+@import 'isgms-dashboard-react/bootstrap/card';
+@import 'isgms-dashboard-react/bootstrap/breadcrumb';
+@import 'isgms-dashboard-react/bootstrap/pagination';
+@import 'isgms-dashboard-react/bootstrap/badge';
+@import 'isgms-dashboard-react/bootstrap/jumbotron';
+@import 'isgms-dashboard-react/bootstrap/alert';
+@import 'isgms-dashboard-react/bootstrap/progress';
+@import 'isgms-dashboard-react/bootstrap/media';
+@import 'isgms-dashboard-react/bootstrap/list-group';
+@import 'isgms-dashboard-react/bootstrap/close';
+@import 'isgms-dashboard-react/bootstrap/modal';
+@import 'isgms-dashboard-react/bootstrap/tooltip';
+@import 'isgms-dashboard-react/bootstrap/popover';
+@import 'isgms-dashboard-react/bootstrap/carousel';
+@import 'isgms-dashboard-react/bootstrap/utilities';
+@import 'isgms-dashboard-react/bootstrap/print';
+
+// Custom components
+
+@import 'isgms-dashboard-react/custom/alerts.scss';
+@import 'isgms-dashboard-react/custom/badges.scss';
+@import 'isgms-dashboard-react/custom/buttons.scss';
+@import 'isgms-dashboard-react/custom/dropdown.scss';
+@import 'isgms-dashboard-react/custom/footer.scss';
+@import 'isgms-dashboard-react/custom/forms.scss';
+@import 'isgms-dashboard-react/custom/images.scss';
+@import 'isgms-dashboard-react/custom/modal.scss';
+@import 'isgms-dashboard-react/custom/navbar.scss';
+@import 'isgms-dashboard-react/custom/type.scss';
+@import 'isgms-dashboard-react/custom/tables';
+@import 'isgms-dashboard-react/custom/checkboxes-radio';
+@import 'isgms-dashboard-react/custom/fixed-plugin';
+@import 'isgms-dashboard-react/custom/sidebar-and-main-panel.scss';
+@import 'isgms-dashboard-react/custom/misc.scss';
+@import 'isgms-dashboard-react/custom/input-group.scss';
+@import 'isgms-dashboard-react/custom/dash.scss';
+@import 'isgms-dashboard-react/custom/KnowledgeBase.scss';
+@import 'isgms-dashboard-react/custom/toolkit.scss';
+@import 'isgms-dashboard-react/custom/homepage.scss';
+// Vendor / Plugins
+
+@import 'isgms-dashboard-react/custom/vendor/plugin-perfect-scrollbar.scss';
+@import 'isgms-dashboard-react/custom/vendor/plugin-react-notification-alert.scss';
+
+// light mode
+
+@import 'isgms-dashboard-react/custom/white-content.scss';
+
+// Cards
+
+@import 'isgms-dashboard-react/custom/card';
+@import 'isgms-dashboard-react/custom/cards/card-chart';
+@import 'isgms-dashboard-react/custom/cards/card-map';
+@import 'isgms-dashboard-react/custom/cards/card-user';
+@import 'isgms-dashboard-react/custom/cards/card-task';
+@import 'isgms-dashboard-react/custom/cards/card-plain';
+@import 'isgms-dashboard-react/custom/cards/card-timeseries';
+
+// React differences
+@import 'isgms-dashboard-react/react-differences/react-differences';
